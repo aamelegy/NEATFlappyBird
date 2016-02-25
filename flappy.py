@@ -15,7 +15,7 @@ import random
 Inputs = 1
 Outputs = 1
 
-Population = 300
+Population = 150
 DeltaDisjoint = 2.0
 DeltaWeights = 0.4
 DeltaThreshold = 1.0
@@ -819,7 +819,7 @@ def mainGame(movementInfo):
             if pipe['x'] + IMAGES['player'][0].get_width() + 10 > playerx :
                 pi = pipe
                 break
-        if getNetworkDecision([playery/10-pi['y']/10+IMAGES['player'][0].get_height()/10 + 3]) == 1:
+        if getNetworkDecision([playery/10-pi['y']/10+IMAGES['player'][0].get_height()/10 + 4]) == 1:
             if playery > -2 * IMAGES['player'][0].get_height():
                 playerVelY = playerFlapAcc
                 playerFlapped = True
